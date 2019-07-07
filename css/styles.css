@@ -155,7 +155,7 @@ img {
 }
 .men:hover .overlay {
     opacity: 1;
-    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138, .9) 0%, rgb(243,129,129, .9) 100%);
+   background-image: -moz-linear-gradient( 90deg, rgb(252,227,138, .9) 0%, rgb(243,129,129, .9) 100%);
    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138, .9) 0%, rgb(243,129,129, .9) 100%);
    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138, .9) 0%, rgb(243,129,129, .9) 100%);
 }
@@ -180,21 +180,20 @@ img {
     box-shadow: 10px 10px 0px 0 rgba(149, 225, 211, 0.76);
     transform: translate(-10px, -10px);
     z-index: 1;
-    transition: transform 0.2ms linear;
-   }
- 
- .team-item:hover img {
-    transform: translate(-10px, -10px);    
- }
+}
+
+.overlay {
+    transition: transform 0.2s linear;
+}
  
 .socials {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 224px;
-    height: 56px;
     align-items: center;
     align-content: center;
+    width: 224px;
+    height: 56px;
 }
 
 .sociality {
